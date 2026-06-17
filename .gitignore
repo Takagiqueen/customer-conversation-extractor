@@ -4,3 +4,7 @@ __pycache__/
 .venv/
 venv/
 .DS_Store
+.pytest_cache/
+.coverage
+dist/
+build/

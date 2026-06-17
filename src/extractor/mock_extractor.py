@@ -677,10 +677,20 @@ class MockExtractor:
         # 用户侧：摘取表达诉求的消息
         user_keywords = _intent_user_keywords(intent)
         user_quotes = utils.extract_quotes(turns, user_keywords, role="user")
+        # 兜底：关键词匹配不到时，取第一条用户消息
+        if not user_quotes:
+            first = utils.get_first_user_msg(turns)
+            if first:
+                user_quotes = [first]
 
         # 客服侧：摘取给出处理方案的消息
         agent_keywords = _resolution_agent_keywords(resolution)
         agent_quotes = utils.extract_quotes(turns, agent_keywords, role="agent")
+        # 兜底：关键词匹配不到时，取第一条客服回复
+        if not agent_quotes:
+            first = utils.get_first_agent_msg(turns)
+            if first:
+                agent_quotes = [first]
 
         # 推理依据
         reasoning = (
@@ -733,7 +743,14 @@ class MockExtractor:
         if utils.has_bot_complaint(turns):
             reasons.append("用户抱怨智能客服体验，需反馈给产品团队")
         if utils.has_delayed_response(turns):
-            reasons.append("存在响应延迟，需评估排班或响应流程")
+            reasons.append("存在客服响应延迟，需评估排班或响应流程")
+        # 业务进度延迟（退款到账慢等，非客服响应问题）
+        if primary_intent == PrimaryIntent.URGE_FOLLOWUP:
+            if utils.has_any_keyword(user_text, [
+                "等了五", "等了好几天", "还没到账",
+                "还没动静", "一周了还没", "还没处理",
+            ]):
+                reasons.append("业务进度待跟进，退款或发货时效需关注")
         if _has_incomplete_info(turns):
             reasons.append("用户未提供足够信息即结束对话，提取结果可能不完整")
 

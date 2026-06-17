@@ -208,7 +208,7 @@
       },
       "confidence": 0.7999999999999999,
       "needs_manual_review": true,
-      "manual_review_reason": "涉及投诉升级风险，需主管关注；存在响应延迟，需评估排班或响应流程"
+      "manual_review_reason": "涉及投诉升级风险，需主管关注；存在客服响应延迟，需评估排班或响应流程"
     },
     {
       "conversation_id": "conv_06",
@@ -461,7 +461,7 @@
       },
       "confidence": 0.85,
       "needs_manual_review": true,
-      "manual_review_reason": "存在响应延迟，需评估排班或响应流程；用户未提供足够信息即结束对话，提取结果可能不完整"
+      "manual_review_reason": "业务进度待跟进，退款或发货时效需关注；用户未提供足够信息即结束对话，提取结果可能不完整"
     },
     {
       "conversation_id": "conv_12",
@@ -493,8 +493,10 @@
           "能不能帮我看看这款手机和那款手机哪个好",
           "就是你们首页推荐的那两个"
         ],
-        "agent_quotes": [],
-        "reasoning": "用户意图为商品咨询，客服处理结果为未解决。判断基于对话中2条用户关键语句和0条客服回复。"
+        "agent_quotes": [
+          "好的，请问您看的是哪两款手机呢？"
+        ],
+        "reasoning": "用户意图为商品咨询，客服处理结果为未解决。判断基于对话中2条用户关键语句和1条客服回复。"
       },
       "confidence": 0.85,
       "needs_manual_review": true,
@@ -624,7 +626,7 @@
       },
       "confidence": 0.85,
       "needs_manual_review": true,
-      "manual_review_reason": "存在响应延迟，需评估排班或响应流程；用户未提供足够信息即结束对话，提取结果可能不完整"
+      "manual_review_reason": "用户未提供足够信息即结束对话，提取结果可能不完整"
     },
     {
       "conversation_id": "conv_16",
@@ -665,7 +667,7 @@
       },
       "confidence": 0.85,
       "needs_manual_review": true,
-      "manual_review_reason": "已转人工但当前对话未显示最终处理结果；存在响应延迟，需评估排班或响应流程"
+      "manual_review_reason": "已转人工但当前对话未显示最终处理结果；业务进度待跟进，退款或发货时效需关注"
     },
     {
       "conversation_id": "conv_17",
@@ -705,8 +707,8 @@
         "reasoning": "用户意图为商品咨询，客服处理结果为已解决。判断基于对话中2条用户关键语句和3条客服回复。"
       },
       "confidence": 0.85,
-      "needs_manual_review": true,
-      "manual_review_reason": "存在响应延迟，需评估排班或响应流程"
+      "needs_manual_review": false,
+      "manual_review_reason": null
     },
     {
       "conversation_id": "conv_18",
@@ -741,8 +743,10 @@
           "我买了两件衣服 一件大了 一件小了 想换尺码",
           "白色T恤M号换成L号 蓝色衬衫L号换成M号"
         ],
-        "agent_quotes": [],
-        "reasoning": "用户意图为换货，客服处理结果为待跟进。判断基于对话中2条用户关键语句和0条客服回复。"
+        "agent_quotes": [
+          "好的，换货需要先退货再重新下单。请问您要换哪两件，分别换成什么尺码？"
+        ],
+        "reasoning": "用户意图为换货，客服处理结果为待跟进。判断基于对话中2条用户关键语句和1条客服回复。"
       },
       "confidence": 0.85,
       "needs_manual_review": false,
@@ -830,7 +834,7 @@
       },
       "confidence": 0.75,
       "needs_manual_review": true,
-      "manual_review_reason": "用户有流失倾向，需评估挽留策略；重复质量问题，需品控部门跟进；存在响应延迟，需评估排班或响应流程"
+      "manual_review_reason": "用户有流失倾向，需评估挽留策略；重复质量问题，需品控部门跟进"
     },
     {
       "conversation_id": "conv_21",
@@ -942,8 +946,10 @@
         "user_quotes": [
           "我给你们提个建议 你们能不能加个功能就是下单之前能先看看实物视频 光看图片有时候不太准"
         ],
-        "agent_quotes": [],
-        "reasoning": "用户意图为建议反馈，客服处理结果为已解决。判断基于对话中1条用户关键语句和0条客服回复。"
+        "agent_quotes": [
+          "感谢您的建议！这个想法很好，实物视频确实能帮用户更好地做决策。我把您的建议记录下来反馈给产品团队。"
+        ],
+        "reasoning": "用户意图为建议反馈，客服处理结果为已解决。判断基于对话中1条用户关键语句和1条客服回复。"
       },
       "confidence": 0.85,
       "needs_manual_review": false,
@@ -987,7 +993,7 @@
       },
       "confidence": 0.85,
       "needs_manual_review": true,
-      "manual_review_reason": "存在响应延迟，需评估排班或响应流程"
+      "manual_review_reason": "存在客服响应延迟，需评估排班或响应流程"
     },
     {
       "conversation_id": "conv_25",
@@ -1028,9 +1034,9 @@
       },
       "confidence": 0.7999999999999999,
       "needs_manual_review": true,
-      "manual_review_reason": "用户中途放弃，需评估是否需主动回访；用户有流失倾向，需评估挽留策略；存在响应延迟，需评估排班或响应流程"
+      "manual_review_reason": "用户中途放弃，需评估是否需主动回访；用户有流失倾向，需评估挽留策略；存在客服响应延迟，需评估排班或响应流程"
     }
   ],
   "failed_ids": [],
-  "summary": "共处理25条对话。已解决15条（60%），涉及投诉4条，需人工复核15条。"
+  "summary": "共处理25条对话。已解决15条（60%），涉及投诉4条，需人工复核14条。"
 }
