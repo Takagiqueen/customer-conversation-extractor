@@ -247,6 +247,21 @@ class MockExtractor:
     ) -> IssueCategory:
         """根据用户表述和意图综合判定业务分类"""
 
+        # 退款到账时效（优先级最高：当用户明确表达退款/到账等太久时，
+        # 即使同时有服务响应抱怨，也应归为退款时效问题）
+        _refund_timing_words = [
+            "还没到", "还没到账", "没到账", "没动静", "一周了还没",
+            "等了.*天.*退款", "退款.*没到", "还没.*退款",
+        ]
+        _refund_words_check = ["退款", "退", "退了", "到账"]
+        if intent == PrimaryIntent.URGE_FOLLOWUP:
+            if utils.has_any_keyword(user_text, _refund_words_check):
+                if utils.has_any_keyword(user_text, _refund_timing_words):
+                    return IssueCategory.REFUND_TIMELINESS
+                # 兜底：含退款词 + 催促时间词
+                if utils.has_any_keyword(user_text, ["等了好", "好几天", "几天了", "等了五", "等了半", "一周了", "还没处理"]):
+                    return IssueCategory.REFUND_TIMELINESS
+
         # 服务响应问题（优先于质量问题，因为抱怨服务≠商品质量问题）
         # 注意："机器人"不在此列，"扫地机器人"是商品名不是客服机器人
         if utils.has_any_keyword(user_text, [
@@ -269,13 +284,6 @@ class MockExtractor:
             "物流", "转运", "取件",
         ]):
             return IssueCategory.LOGISTICS_DELIVERY
-
-        # 退款到账
-        if utils.has_any_keyword(user_text, [
-            "退款.*还没", "还没.*退款", "到账", "退款进度",
-            "还没到", "退款.*申请", "没到",
-        ]) and intent == PrimaryIntent.URGE_FOLLOWUP:
-            return IssueCategory.REFUND_TIMELINESS
 
         # 账号安全
         if utils.has_any_keyword(user_text, ["异地登录", "账号安全", "登录记录"]):
@@ -588,6 +596,7 @@ class MockExtractor:
         # 投诉升级风险
         if utils.has_any_keyword(user_text, [
             "投诉", "投诉你们", "找你们领导", "上级",
+            "智障", "浪费我时间", "答非所问", "什么破服务",
         ]):
             flags.append(RiskFlag.ESCALATION_RISK)
 
@@ -840,7 +849,14 @@ def _agent_gave_answer(agent_text: str) -> bool:
 
 def _extract_resolution_action(agent_text: str) -> str:
     """从客服回复中提取具体处理措施摘要"""
-    # 取客服文本中涉及动作的部分，截断至 100 字
+    # 组合检测：全额退款 + 补偿 + 品控反馈
+    has_full_refund = "全额退款" in agent_text
+    has_coupon = "优惠券" in agent_text
+    has_quality_feedback = utils.has_any_keyword(agent_text, ["品控", "反馈给"])
+    if has_full_refund and has_coupon and has_quality_feedback:
+        return "全额退款+50元优惠券补偿+反馈品控部门跟进"
+
+    # 按优先级匹配单动作
     action_markers = [
         ("发起退款", "发起退款申请"),
         ("帮您取消", "已取消订单"),

@@ -365,7 +365,9 @@
       "user_sentiment_initial": "angry",
       "user_sentiment_final": "neutral",
       "urgency_level": "high",
-      "risk_flags": [],
+      "risk_flags": [
+        "投诉升级风险"
+      ],
       "complaint_related": true,
       "human_transfer": false,
       "compensation_offered": true,
@@ -381,9 +383,9 @@
         ],
         "reasoning": "用户意图为投诉，客服处理结果为已解决。判断基于对话中1条用户关键语句和1条客服回复。"
       },
-      "confidence": 0.85,
+      "confidence": 0.7999999999999999,
       "needs_manual_review": true,
-      "manual_review_reason": "用户抱怨智能客服体验，需反馈给产品团队"
+      "manual_review_reason": "涉及投诉升级风险，需主管关注；用户抱怨智能客服体验，需反馈给产品团队"
     },
     {
       "conversation_id": "conv_10",
@@ -634,7 +636,7 @@
       "agent": "小张",
       "turn_count": 4,
       "primary_intent": "催促/跟进",
-      "issue_category": "服务响应",
+      "issue_category": "退款到账",
       "issue_summary": "我这个问题你说了半天也没解决 给我转人工客服 终于 我的问题是那个退款已经申请了一周了还没动静 订单号 DD20240228-3341",
       "products_mentioned": [],
       "is_multi_issue": false,
@@ -805,7 +807,7 @@
       "is_multi_issue": false,
       "sub_issues": [],
       "resolution_status": "已解决",
-      "resolution_action": "已记录反馈",
+      "resolution_action": "全额退款+50元优惠券补偿+反馈品控部门跟进",
       "customer_next_action": "等待退款到账",
       "agent_next_action": "发送通知短信",
       "user_sentiment_initial": "negative",
