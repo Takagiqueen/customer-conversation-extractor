@@ -62,7 +62,7 @@ def main(argv: list[str] | None = None) -> None:
     output_path = Path(args.output)
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
-    with open(output_path, "w", encoding="utf-8") as f:
+    with open(output_path, "w", encoding="utf-8", newline="\n") as f:
         f.write(result.model_dump_json(indent=2, ensure_ascii=False))
 
     print(f"提取完成：{result.success_count}/{result.total_count} 条成功"
