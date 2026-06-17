@@ -1,0 +1,1036 @@
+{
+  "total_count": 25,
+  "success_count": 25,
+  "failed_count": 0,
+  "results": [
+    {
+      "conversation_id": "conv_01",
+      "channel": "在线",
+      "agent": "小王",
+      "turn_count": 5,
+      "primary_intent": "退款/退货",
+      "issue_category": "商品质量",
+      "issue_summary": "我三天前买的蓝牙耳机，今天发现左耳没声音，能退款吗？ 手机号 138xxxx5521 可以，谢谢",
+      "products_mentioned": [
+        "蓝牙耳机"
+      ],
+      "is_multi_issue": false,
+      "sub_issues": [],
+      "resolution_status": "已解决",
+      "resolution_action": "发起退款申请",
+      "customer_next_action": "等待处理结果",
+      "agent_next_action": null,
+      "user_sentiment_initial": "neutral",
+      "user_sentiment_final": "positive",
+      "urgency_level": "high",
+      "risk_flags": [],
+      "complaint_related": false,
+      "human_transfer": false,
+      "compensation_offered": false,
+      "order_ids": [],
+      "pii_detected": true,
+      "pii_types": [
+        "phone"
+      ],
+      "evidence": {
+        "user_quotes": [
+          "我三天前买的蓝牙耳机，今天发现左耳没声音，能退款吗？"
+        ],
+        "agent_quotes": [
+          "非常抱歉给您带来不便。商品签收后7天内出现质量问题可以申请退款。我帮您查一下订单，请问方便提供一下手机号或订单号吗？",
+          "查到了，您这单在7天质保期内，我现在帮您发起退款申请，预计1-3个工作日到账。退回原支付方式可以吗？"
+        ],
+        "reasoning": "用户意图为退款/退货，客服处理结果为已解决。判断基于对话中1条用户关键语句和2条客服回复。"
+      },
+      "confidence": 0.85,
+      "needs_manual_review": true,
+      "manual_review_reason": "对话含个人隐私信息，需合规检查"
+    },
+    {
+      "conversation_id": "conv_02",
+      "channel": "在线",
+      "agent": "小李",
+      "turn_count": 5,
+      "primary_intent": "物流查询",
+      "issue_category": "物流配送",
+      "issue_summary": "快递显示已签收但我没收到啊 门卫和快递柜都没有，邻居也没拿 好吧",
+      "products_mentioned": [],
+      "is_multi_issue": false,
+      "sub_issues": [],
+      "resolution_status": "待跟进",
+      "resolution_action": "已联系快递公司核实",
+      "customer_next_action": null,
+      "agent_next_action": "24小时内联系快递公司并回复用户",
+      "user_sentiment_initial": "neutral",
+      "user_sentiment_final": "negative",
+      "urgency_level": "high",
+      "risk_flags": [],
+      "complaint_related": false,
+      "human_transfer": false,
+      "compensation_offered": false,
+      "order_ids": [],
+      "pii_detected": false,
+      "pii_types": [],
+      "evidence": {
+        "user_quotes": [
+          "快递显示已签收但我没收到啊",
+          "门卫和快递柜都没有，邻居也没拿"
+        ],
+        "agent_quotes": [
+          "那请您稍等，我帮您联系快递公司核实派送情况，会在24小时内给您回复。"
+        ],
+        "reasoning": "用户意图为物流查询，客服处理结果为待跟进。判断基于对话中2条用户关键语句和1条客服回复。"
+      },
+      "confidence": 0.85,
+      "needs_manual_review": false,
+      "manual_review_reason": null
+    },
+    {
+      "conversation_id": "conv_03",
+      "channel": "在线",
+      "agent": "小王",
+      "turn_count": 4,
+      "primary_intent": "优惠券/促销",
+      "issue_category": "促销规则",
+      "issue_summary": "为什么我的50元优惠券用不了 那我再买件衣服就行了吧",
+      "products_mentioned": [],
+      "is_multi_issue": false,
+      "sub_issues": [],
+      "resolution_status": "已解决",
+      "resolution_action": "您好，这张50元优惠券使用条件是满200元可用，且仅限服装类商品。您购物车总金额188元，还差12元。 是的，选购12元以上的服装类商品就可以使用了。",
+      "customer_next_action": null,
+      "agent_next_action": null,
+      "user_sentiment_initial": "neutral",
+      "user_sentiment_final": "neutral",
+      "urgency_level": "medium",
+      "risk_flags": [],
+      "complaint_related": false,
+      "human_transfer": false,
+      "compensation_offered": false,
+      "order_ids": [],
+      "pii_detected": false,
+      "pii_types": [],
+      "evidence": {
+        "user_quotes": [
+          "为什么我的50元优惠券用不了"
+        ],
+        "agent_quotes": [
+          "是的，选购12元以上的服装类商品就可以使用了。"
+        ],
+        "reasoning": "用户意图为优惠券/促销，客服处理结果为已解决。判断基于对话中1条用户关键语句和1条客服回复。"
+      },
+      "confidence": 0.85,
+      "needs_manual_review": false,
+      "manual_review_reason": null
+    },
+    {
+      "conversation_id": "conv_04",
+      "channel": "电话",
+      "agent": "小张",
+      "turn_count": 6,
+      "primary_intent": "账号安全",
+      "issue_category": "账号安全",
+      "issue_summary": "我收到短信说账号异地登录了，是真的吗？我好害怕 我的手机号 139xxxx8832 好的我马上去改",
+      "products_mentioned": [],
+      "is_multi_issue": false,
+      "sub_issues": [],
+      "resolution_status": "已解决",
+      "resolution_action": "查询相关信息",
+      "customer_next_action": "修改密码并开启二次验证",
+      "agent_next_action": null,
+      "user_sentiment_initial": "anxious",
+      "user_sentiment_final": "neutral",
+      "urgency_level": "critical",
+      "risk_flags": [
+        "账号安全风险"
+      ],
+      "complaint_related": false,
+      "human_transfer": false,
+      "compensation_offered": false,
+      "order_ids": [],
+      "pii_detected": true,
+      "pii_types": [
+        "phone"
+      ],
+      "evidence": {
+        "user_quotes": [
+          "我收到短信说账号异地登录了，是真的吗？我好害怕"
+        ],
+        "agent_quotes": [
+          "您好，请先别担心。我帮您查一下登录记录。请问您的账号是？",
+          "查到了，确实有一次异地登录记录，IP显示在广州。建议您立即修改密码并开启二次验证。",
+          "好的，修改完成后如果还有异常登录提醒，随时联系我们。"
+        ],
+        "reasoning": "用户意图为账号安全，客服处理结果为已解决。判断基于对话中1条用户关键语句和3条客服回复。"
+      },
+      "confidence": 0.7999999999999999,
+      "needs_manual_review": true,
+      "manual_review_reason": "涉及账号安全问题，需安全团队复核；对话含个人隐私信息，需合规检查"
+    },
+    {
+      "conversation_id": "conv_05",
+      "channel": "在线",
+      "agent": "小李",
+      "turn_count": 5,
+      "primary_intent": "投诉",
+      "issue_category": "服务响应",
+      "issue_summary": "你们什么破服务！！等了20分钟都没人理我！！我要投诉！！！ 我买的手机壳收到是碎的，拍照给你们客服发了半天没人回 行吧，赶紧发",
+      "products_mentioned": [
+        "手机壳"
+      ],
+      "is_multi_issue": false,
+      "sub_issues": [],
+      "resolution_status": "已解决",
+      "resolution_action": "免费补发商品",
+      "customer_next_action": null,
+      "agent_next_action": null,
+      "user_sentiment_initial": "angry",
+      "user_sentiment_final": "negative",
+      "urgency_level": "high",
+      "risk_flags": [
+        "投诉升级风险"
+      ],
+      "complaint_related": true,
+      "human_transfer": false,
+      "compensation_offered": true,
+      "order_ids": [],
+      "pii_detected": false,
+      "pii_types": [],
+      "evidence": {
+        "user_quotes": [
+          "你们什么破服务！！等了20分钟都没人理我！！我要投诉！！！"
+        ],
+        "agent_quotes": [
+          "非常抱歉让您久等了，我理解您的不满。请问您之前遇到了什么问题，我来帮您处理。",
+          "这确实是我们的问题，我这边直接帮您申请免费补发一个新的，同时赠送您一张20元优惠券作为补偿，您看可以吗？"
+        ],
+        "reasoning": "用户意图为投诉，客服处理结果为已解决。判断基于对话中1条用户关键语句和2条客服回复。"
+      },
+      "confidence": 0.7999999999999999,
+      "needs_manual_review": true,
+      "manual_review_reason": "涉及投诉升级风险，需主管关注；存在响应延迟，需评估排班或响应流程"
+    },
+    {
+      "conversation_id": "conv_06",
+      "channel": "在线",
+      "agent": "小王",
+      "turn_count": 4,
+      "primary_intent": "退款/退货",
+      "issue_category": "物流配送",
+      "issue_summary": "我想问一下这个退货的事情，对了我那个快递到了没 退货的是 DD20240301-5523，快递的是 DD20240305-8812",
+      "products_mentioned": [],
+      "is_multi_issue": true,
+      "sub_issues": [
+        {
+          "issue_summary": "退货/退款进度查询",
+          "issue_category": "售后政策",
+          "resolution_status": "已解决",
+          "resolution_action": "审核已通过，告知用户按地址寄回商品"
+        },
+        {
+          "issue_summary": "快递配送状态查询",
+          "issue_category": "物流配送",
+          "resolution_status": "已解决",
+          "resolution_action": "查询配送状态并告知预计送达时间"
+        }
+      ],
+      "resolution_status": "已解决",
+      "resolution_action": "查询相关信息",
+      "customer_next_action": "按退货地址寄回商品",
+      "agent_next_action": null,
+      "user_sentiment_initial": "neutral",
+      "user_sentiment_final": "neutral",
+      "urgency_level": "high",
+      "risk_flags": [],
+      "complaint_related": false,
+      "human_transfer": false,
+      "compensation_offered": false,
+      "order_ids": [
+        "DD20240301-5523",
+        "DD20240305-8812"
+      ],
+      "pii_detected": false,
+      "pii_types": [],
+      "evidence": {
+        "user_quotes": [
+          "我想问一下这个退货的事情，对了我那个快递到了没",
+          "退货的是 DD20240301-5523，快递的是 DD20240305-8812"
+        ],
+        "agent_quotes": [
+          "好的，两个问题我都帮您查。请问您的订单号是？"
+        ],
+        "reasoning": "用户意图为退款/退货，客服处理结果为已解决。判断基于对话中2条用户关键语句和1条客服回复。"
+      },
+      "confidence": 0.75,
+      "needs_manual_review": true,
+      "manual_review_reason": "多诉求对话，需确认各子问题分类和解决状态的准确性"
+    },
+    {
+      "conversation_id": "conv_07",
+      "channel": "在线",
+      "agent": "小张",
+      "turn_count": 4,
+      "primary_intent": "退款/退货",
+      "issue_category": "售后政策",
+      "issue_summary": "我要退的这个订单里有两个东西，我只想退其中一个行不行 就那个蓝色的杯子不要了，碗还是要的",
+      "products_mentioned": [
+        "蓝色杯子",
+        "碗"
+      ],
+      "is_multi_issue": false,
+      "sub_issues": [],
+      "resolution_status": "已解决",
+      "resolution_action": "可以的，支持部分退货。请告诉我您要退哪个商品，我帮您单独发起退货申请。 好的，已为您发起蓝色杯子的退货申请，碗不受影响。退货后杯子的款项会在1-3个工作日退回。",
+      "customer_next_action": null,
+      "agent_next_action": null,
+      "user_sentiment_initial": "neutral",
+      "user_sentiment_final": "neutral",
+      "urgency_level": "high",
+      "risk_flags": [],
+      "complaint_related": false,
+      "human_transfer": false,
+      "compensation_offered": false,
+      "order_ids": [],
+      "pii_detected": false,
+      "pii_types": [],
+      "evidence": {
+        "user_quotes": [
+          "我要退的这个订单里有两个东西，我只想退其中一个行不行"
+        ],
+        "agent_quotes": [
+          "可以的，支持部分退货。请告诉我您要退哪个商品，我帮您单独发起退货申请。",
+          "好的，已为您发起蓝色杯子的退货申请，碗不受影响。退货后杯子的款项会在1-3个工作日退回。"
+        ],
+        "reasoning": "用户意图为退款/退货，客服处理结果为已解决。判断基于对话中1条用户关键语句和2条客服回复。"
+      },
+      "confidence": 0.85,
+      "needs_manual_review": false,
+      "manual_review_reason": null
+    },
+    {
+      "conversation_id": "conv_08",
+      "channel": "在线",
+      "agent": "小李",
+      "turn_count": 3,
+      "primary_intent": "商品咨询",
+      "issue_category": "产品信息",
+      "issue_summary": "这个充电宝能带上飞机吗 好的谢谢",
+      "products_mentioned": [
+        "充电宝"
+      ],
+      "is_multi_issue": false,
+      "sub_issues": [],
+      "resolution_status": "已解决",
+      "resolution_action": "这款充电宝额定容量是20000mAh（约74Wh），根据民航局规定，额定能量不超过100Wh的充电宝可以随身携带上飞机（不能托运）。所以这款是可以带上飞机的。",
+      "customer_next_action": null,
+      "agent_next_action": null,
+      "user_sentiment_initial": "neutral",
+      "user_sentiment_final": "positive",
+      "urgency_level": "low",
+      "risk_flags": [],
+      "complaint_related": false,
+      "human_transfer": false,
+      "compensation_offered": false,
+      "order_ids": [],
+      "pii_detected": false,
+      "pii_types": [],
+      "evidence": {
+        "user_quotes": [
+          "这个充电宝能带上飞机吗"
+        ],
+        "agent_quotes": [
+          "这款充电宝额定容量是20000mAh（约74Wh），根据民航局规定，额定能量不超过100Wh的充电宝可以随身携带上飞机（不能托运）。所以这款是可以带上飞机的。"
+        ],
+        "reasoning": "用户意图为商品咨询，客服处理结果为已解决。判断基于对话中1条用户关键语句和1条客服回复。"
+      },
+      "confidence": 0.85,
+      "needs_manual_review": false,
+      "manual_review_reason": null
+    },
+    {
+      "conversation_id": "conv_09",
+      "channel": "电话",
+      "agent": "小王",
+      "turn_count": 6,
+      "primary_intent": "投诉",
+      "issue_category": "服务响应",
+      "issue_summary": "你们那个什么智能客服简直是智障！问了三遍都答非所问！浪费我时间！ 我就想问下退货运费谁出，机器人一直在跟我说退货流程 收到就是坏的，质量问题",
+      "products_mentioned": [],
+      "is_multi_issue": false,
+      "sub_issues": [],
+      "resolution_status": "已解决",
+      "resolution_action": "非常抱歉给您带来不好的体验，您的反馈我们非常重视。请问您最初想咨询什么问题？我直接帮您处理。 理解您的困扰了。退货运费方面：质量问题退货运费由我们承担，非质量问题退货运费由您承担。请问您是哪种情况？",
+      "customer_next_action": "按退货地址寄回商品",
+      "agent_next_action": null,
+      "user_sentiment_initial": "angry",
+      "user_sentiment_final": "neutral",
+      "urgency_level": "high",
+      "risk_flags": [],
+      "complaint_related": true,
+      "human_transfer": false,
+      "compensation_offered": true,
+      "order_ids": [],
+      "pii_detected": false,
+      "pii_types": [],
+      "evidence": {
+        "user_quotes": [
+          "你们那个什么智能客服简直是智障！问了三遍都答非所问！浪费我时间！"
+        ],
+        "agent_quotes": [
+          "非常抱歉给您带来不好的体验，您的反馈我们非常重视。请问您最初想咨询什么问题？我直接帮您处理。"
+        ],
+        "reasoning": "用户意图为投诉，客服处理结果为已解决。判断基于对话中1条用户关键语句和1条客服回复。"
+      },
+      "confidence": 0.85,
+      "needs_manual_review": true,
+      "manual_review_reason": "用户抱怨智能客服体验，需反馈给产品团队"
+    },
+    {
+      "conversation_id": "conv_10",
+      "channel": "在线",
+      "agent": "小张",
+      "turn_count": 4,
+      "primary_intent": "无实质问题",
+      "issue_category": "其他",
+      "issue_summary": "你好 嗯嗯我想想",
+      "products_mentioned": [],
+      "is_multi_issue": false,
+      "sub_issues": [],
+      "resolution_status": "无需解决",
+      "resolution_action": "用户未提出明确诉求",
+      "customer_next_action": null,
+      "agent_next_action": null,
+      "user_sentiment_initial": "neutral",
+      "user_sentiment_final": "neutral",
+      "urgency_level": "low",
+      "risk_flags": [],
+      "complaint_related": false,
+      "human_transfer": false,
+      "compensation_offered": false,
+      "order_ids": [],
+      "pii_detected": false,
+      "pii_types": [],
+      "evidence": {
+        "user_quotes": [
+          "你好",
+          "嗯嗯我想想"
+        ],
+        "agent_quotes": [
+          "您好！请问有什么可以帮您？",
+          "好的，您慢慢想，有什么需要随时找我。"
+        ],
+        "reasoning": "用户意图为无实质问题，客服处理结果为无需解决。判断基于对话中2条用户关键语句和2条客服回复。"
+      },
+      "confidence": 0.85,
+      "needs_manual_review": false,
+      "manual_review_reason": null
+    },
+    {
+      "conversation_id": "conv_11",
+      "channel": "在线",
+      "agent": "小李",
+      "turn_count": 6,
+      "primary_intent": "催促/跟进",
+      "issue_category": "退款到账",
+      "issue_summary": "我那个退款怎么还没到啊 都等了五天了 我不记得订单号了 就是上周买的那个衣服 行吧 再等等",
+      "products_mentioned": [],
+      "is_multi_issue": false,
+      "sub_issues": [],
+      "resolution_status": "待跟进",
+      "resolution_action": "查询相关信息",
+      "customer_next_action": "等待处理结果",
+      "agent_next_action": null,
+      "user_sentiment_initial": "negative",
+      "user_sentiment_final": "negative",
+      "urgency_level": "high",
+      "risk_flags": [],
+      "complaint_related": false,
+      "human_transfer": false,
+      "compensation_offered": false,
+      "order_ids": [],
+      "pii_detected": false,
+      "pii_types": [],
+      "evidence": {
+        "user_quotes": [
+          "我那个退款怎么还没到啊 都等了五天了"
+        ],
+        "agent_quotes": [
+          "查到了，您的退款已于3月5日处理，但银行处理中，预计1-2个工作日到账。如果超过还没收到请再联系我们。"
+        ],
+        "reasoning": "用户意图为催促/跟进，客服处理结果为待跟进。判断基于对话中1条用户关键语句和1条客服回复。"
+      },
+      "confidence": 0.85,
+      "needs_manual_review": true,
+      "manual_review_reason": "存在响应延迟，需评估排班或响应流程；用户未提供足够信息即结束对话，提取结果可能不完整"
+    },
+    {
+      "conversation_id": "conv_12",
+      "channel": "在线",
+      "agent": "小王",
+      "turn_count": 5,
+      "primary_intent": "商品咨询",
+      "issue_category": "产品信息",
+      "issue_summary": "能不能帮我看看这款手机和那款手机哪个好 就是你们首页推荐的那两个 算了不看了 我自己在网上查吧",
+      "products_mentioned": [],
+      "is_multi_issue": false,
+      "sub_issues": [],
+      "resolution_status": "未解决",
+      "resolution_action": "用户中途放弃沟通或转向其他渠道",
+      "customer_next_action": null,
+      "agent_next_action": null,
+      "user_sentiment_initial": "neutral",
+      "user_sentiment_final": "negative",
+      "urgency_level": "low",
+      "risk_flags": [],
+      "complaint_related": false,
+      "human_transfer": false,
+      "compensation_offered": false,
+      "order_ids": [],
+      "pii_detected": false,
+      "pii_types": [],
+      "evidence": {
+        "user_quotes": [
+          "能不能帮我看看这款手机和那款手机哪个好",
+          "就是你们首页推荐的那两个"
+        ],
+        "agent_quotes": [],
+        "reasoning": "用户意图为商品咨询，客服处理结果为未解决。判断基于对话中2条用户关键语句和0条客服回复。"
+      },
+      "confidence": 0.85,
+      "needs_manual_review": true,
+      "manual_review_reason": "用户中途放弃，需评估是否需主动回访；用户未提供足够信息即结束对话，提取结果可能不完整"
+    },
+    {
+      "conversation_id": "conv_13",
+      "channel": "电话",
+      "agent": "小张",
+      "turn_count": 8,
+      "primary_intent": "投诉",
+      "issue_category": "商品质量",
+      "issue_summary": "我买了个扫地机器人 用了两周就不工作了 你们是不是卖假货 开机后转两下就停了 充电也充不进去 换新吧 这个牌子我还是想用的 行 地址呢",
+      "products_mentioned": [
+        "扫地机器人"
+      ],
+      "is_multi_issue": false,
+      "sub_issues": [],
+      "resolution_status": "已解决",
+      "resolution_action": "安排换新",
+      "customer_next_action": "按退货地址寄回商品",
+      "agent_next_action": null,
+      "user_sentiment_initial": "negative",
+      "user_sentiment_final": "neutral",
+      "urgency_level": "critical",
+      "risk_flags": [
+        "法律风险"
+      ],
+      "complaint_related": true,
+      "human_transfer": false,
+      "compensation_offered": true,
+      "order_ids": [],
+      "pii_detected": false,
+      "pii_types": [],
+      "evidence": {
+        "user_quotes": [
+          "我买了个扫地机器人 用了两周就不工作了 你们是不是卖假货"
+        ],
+        "agent_quotes": [
+          "理解您的不满，我先帮您看看具体情况。请问是什么故障？完全不工作还是部分功能异常？",
+          "这个情况可能是电池或主板问题。您的订单在30天质保期内，可以选择退货退款或者换新。您倾向哪种？",
+          "好的，我帮您安排换新。您把旧的寄回来，我们收到后48小时内发出新的。退货运费我们承担。"
+        ],
+        "reasoning": "用户意图为投诉，客服处理结果为已解决。判断基于对话中1条用户关键语句和3条客服回复。"
+      },
+      "confidence": 0.7999999999999999,
+      "needs_manual_review": true,
+      "manual_review_reason": "用户抱怨智能客服体验，需反馈给产品团队"
+    },
+    {
+      "conversation_id": "conv_14",
+      "channel": "在线",
+      "agent": "小李",
+      "turn_count": 6,
+      "primary_intent": "物流查询",
+      "issue_category": "物流配送",
+      "issue_summary": "快递能改派送地址吗 我搬家了 DD20240310-2245 朝阳区建国路88号 远洋国际 12层",
+      "products_mentioned": [],
+      "is_multi_issue": false,
+      "sub_issues": [],
+      "resolution_status": "待跟进",
+      "resolution_action": "配送地址已修改",
+      "customer_next_action": null,
+      "agent_next_action": null,
+      "user_sentiment_initial": "neutral",
+      "user_sentiment_final": "neutral",
+      "urgency_level": "low",
+      "risk_flags": [],
+      "complaint_related": false,
+      "human_transfer": false,
+      "compensation_offered": false,
+      "order_ids": [
+        "DD20240310-2245"
+      ],
+      "pii_detected": true,
+      "pii_types": [
+        "address"
+      ],
+      "evidence": {
+        "user_quotes": [
+          "快递能改派送地址吗 我搬家了"
+        ],
+        "agent_quotes": [
+          "好的，改址申请已提交。改址可能会导致配送延迟1-2天，请您注意查收。"
+        ],
+        "reasoning": "用户意图为物流查询，客服处理结果为待跟进。判断基于对话中1条用户关键语句和1条客服回复。"
+      },
+      "confidence": 0.85,
+      "needs_manual_review": true,
+      "manual_review_reason": "对话含个人隐私信息，需合规检查"
+    },
+    {
+      "conversation_id": "conv_15",
+      "channel": "在线",
+      "agent": "小王",
+      "turn_count": 6,
+      "primary_intent": "系统使用",
+      "issue_category": "系统体验",
+      "issue_summary": "你们这个退货流程也太复杂了吧 搞半天都不知道怎么操作 能不能简化一下 就是那个上传照片的地方 一直说格式不对 哦原来是这个问题 好了上传成功了",
+      "products_mentioned": [],
+      "is_multi_issue": false,
+      "sub_issues": [],
+      "resolution_status": "待跟进",
+      "resolution_action": "退货申请已提交",
+      "customer_next_action": "查收短信通知",
+      "agent_next_action": "发送通知短信",
+      "user_sentiment_initial": "negative",
+      "user_sentiment_final": "neutral",
+      "urgency_level": "high",
+      "risk_flags": [],
+      "complaint_related": false,
+      "human_transfer": false,
+      "compensation_offered": false,
+      "order_ids": [],
+      "pii_detected": false,
+      "pii_types": [],
+      "evidence": {
+        "user_quotes": [
+          "你们这个退货流程也太复杂了吧 搞半天都不知道怎么操作 能不能简化一下",
+          "就是那个上传照片的地方 一直说格式不对",
+          "哦原来是这个问题 好了上传成功了"
+        ],
+        "agent_quotes": [
+          "好的，退货申请已提交成功。审核通过后您会收到退货地址的短信通知。"
+        ],
+        "reasoning": "用户意图为系统使用，客服处理结果为待跟进。判断基于对话中3条用户关键语句和1条客服回复。"
+      },
+      "confidence": 0.85,
+      "needs_manual_review": true,
+      "manual_review_reason": "存在响应延迟，需评估排班或响应流程；用户未提供足够信息即结束对话，提取结果可能不完整"
+    },
+    {
+      "conversation_id": "conv_16",
+      "channel": "在线",
+      "agent": "小张",
+      "turn_count": 4,
+      "primary_intent": "催促/跟进",
+      "issue_category": "服务响应",
+      "issue_summary": "我这个问题你说了半天也没解决 给我转人工客服 终于 我的问题是那个退款已经申请了一周了还没动静 订单号 DD20240228-3341",
+      "products_mentioned": [],
+      "is_multi_issue": false,
+      "sub_issues": [],
+      "resolution_status": "待跟进",
+      "resolution_action": "已转接人工客服继续处理",
+      "customer_next_action": "等待新的客服继续处理",
+      "agent_next_action": null,
+      "user_sentiment_initial": "neutral",
+      "user_sentiment_final": "neutral",
+      "urgency_level": "high",
+      "risk_flags": [],
+      "complaint_related": false,
+      "human_transfer": true,
+      "compensation_offered": false,
+      "order_ids": [
+        "DD20240228-3341"
+      ],
+      "pii_detected": false,
+      "pii_types": [],
+      "evidence": {
+        "user_quotes": [
+          "终于 我的问题是那个退款已经申请了一周了还没动静 订单号 DD20240228-3341"
+        ],
+        "agent_quotes": [
+          "理解您的着急，我马上帮您转接人工客服，请稍等。",
+          "已为您转接人工客服小李，她会继续帮您处理。"
+        ],
+        "reasoning": "用户意图为催促/跟进，客服处理结果为待跟进。判断基于对话中1条用户关键语句和2条客服回复。"
+      },
+      "confidence": 0.85,
+      "needs_manual_review": true,
+      "manual_review_reason": "已转人工但当前对话未显示最终处理结果；存在响应延迟，需评估排班或响应流程"
+    },
+    {
+      "conversation_id": "conv_17",
+      "channel": "电话",
+      "agent": "小李",
+      "turn_count": 6,
+      "primary_intent": "商品咨询",
+      "issue_category": "商品库存",
+      "issue_summary": "我要买的那个包你们啥时候补货啊 等了好久了 就是那个黑色的真皮双肩包 之前看过有货的 行 到时候告诉我一声",
+      "products_mentioned": [],
+      "is_multi_issue": false,
+      "sub_issues": [],
+      "resolution_status": "已解决",
+      "resolution_action": "查询相关信息",
+      "customer_next_action": null,
+      "agent_next_action": "到货后短信通知用户",
+      "user_sentiment_initial": "negative",
+      "user_sentiment_final": "neutral",
+      "urgency_level": "low",
+      "risk_flags": [],
+      "complaint_related": false,
+      "human_transfer": false,
+      "compensation_offered": false,
+      "order_ids": [],
+      "pii_detected": false,
+      "pii_types": [],
+      "evidence": {
+        "user_quotes": [
+          "我要买的那个包你们啥时候补货啊 等了好久了",
+          "就是那个黑色的真皮双肩包 之前看过有货的"
+        ],
+        "agent_quotes": [
+          "请问您看的是哪款包？给我商品链接或名称我帮您查查。",
+          "查到了，这款目前仓库没货，预计下周三补货。您要不要我到货后通知您？",
+          "好的，到货后第一时间短信通知您。您也可以先加到购物车，到货会自动提醒。"
+        ],
+        "reasoning": "用户意图为商品咨询，客服处理结果为已解决。判断基于对话中2条用户关键语句和3条客服回复。"
+      },
+      "confidence": 0.85,
+      "needs_manual_review": true,
+      "manual_review_reason": "存在响应延迟，需评估排班或响应流程"
+    },
+    {
+      "conversation_id": "conv_18",
+      "channel": "在线",
+      "agent": "小王",
+      "turn_count": 7,
+      "primary_intent": "换货",
+      "issue_category": "售后政策",
+      "issue_summary": "我买了两件衣服 一件大了 一件小了 想换尺码 白色T恤M号换成L号 蓝色衬衫L号换成M号 运费谁出啊 好吧",
+      "products_mentioned": [
+        "白色T恤",
+        "蓝色衬衫"
+      ],
+      "is_multi_issue": false,
+      "sub_issues": [],
+      "resolution_status": "待跟进",
+      "resolution_action": "发起换货申请",
+      "customer_next_action": "按退货地址寄回商品",
+      "agent_next_action": null,
+      "user_sentiment_initial": "neutral",
+      "user_sentiment_final": "negative",
+      "urgency_level": "medium",
+      "risk_flags": [],
+      "complaint_related": false,
+      "human_transfer": false,
+      "compensation_offered": false,
+      "order_ids": [],
+      "pii_detected": false,
+      "pii_types": [],
+      "evidence": {
+        "user_quotes": [
+          "我买了两件衣服 一件大了 一件小了 想换尺码",
+          "白色T恤M号换成L号 蓝色衬衫L号换成M号"
+        ],
+        "agent_quotes": [],
+        "reasoning": "用户意图为换货，客服处理结果为待跟进。判断基于对话中2条用户关键语句和0条客服回复。"
+      },
+      "confidence": 0.85,
+      "needs_manual_review": false,
+      "manual_review_reason": null
+    },
+    {
+      "conversation_id": "conv_19",
+      "channel": "在线",
+      "agent": "小张",
+      "turn_count": 5,
+      "primary_intent": "取消订单",
+      "issue_category": "其他",
+      "issue_summary": "我刚下单还没发货 能取消吗 DD20240312-7789 好的 谢谢 买错了",
+      "products_mentioned": [],
+      "is_multi_issue": false,
+      "sub_issues": [],
+      "resolution_status": "已解决",
+      "resolution_action": "已取消订单",
+      "customer_next_action": null,
+      "agent_next_action": null,
+      "user_sentiment_initial": "neutral",
+      "user_sentiment_final": "positive",
+      "urgency_level": "low",
+      "risk_flags": [],
+      "complaint_related": false,
+      "human_transfer": false,
+      "compensation_offered": false,
+      "order_ids": [
+        "DD20240312-7789"
+      ],
+      "pii_detected": false,
+      "pii_types": [],
+      "evidence": {
+        "user_quotes": [
+          "我刚下单还没发货 能取消吗"
+        ],
+        "agent_quotes": [
+          "还没发货的话可以取消。订单号是？",
+          "已帮您取消，款项会在1-3个工作日退回原支付方式。"
+        ],
+        "reasoning": "用户意图为取消订单，客服处理结果为已解决。判断基于对话中1条用户关键语句和2条客服回复。"
+      },
+      "confidence": 0.85,
+      "needs_manual_review": false,
+      "manual_review_reason": null
+    },
+    {
+      "conversation_id": "conv_20",
+      "channel": "电话",
+      "agent": "小李",
+      "turn_count": 6,
+      "primary_intent": "投诉",
+      "issue_category": "商品质量",
+      "issue_summary": "我上次买的东西收到是坏的 跟你们说了半天最后给退了 但是这次的又是坏的 你们品控是不是有问题 退倒是可以退 但我对你们有点没信心了 那行吧 先退了再说",
+      "products_mentioned": [],
+      "is_multi_issue": false,
+      "sub_issues": [],
+      "resolution_status": "已解决",
+      "resolution_action": "已记录反馈",
+      "customer_next_action": "等待退款到账",
+      "agent_next_action": "发送通知短信",
+      "user_sentiment_initial": "negative",
+      "user_sentiment_final": "negative",
+      "urgency_level": "critical",
+      "risk_flags": [
+        "用户流失风险",
+        "批量质量问题"
+      ],
+      "complaint_related": true,
+      "human_transfer": false,
+      "compensation_offered": true,
+      "order_ids": [],
+      "pii_detected": false,
+      "pii_types": [],
+      "evidence": {
+        "user_quotes": [
+          "我上次买的东西收到是坏的 跟你们说了半天最后给退了 但是这次的又是坏的 你们品控是不是有问题"
+        ],
+        "agent_quotes": [
+          "非常抱歉，连续两次收到问题商品确实不应该。我先帮您处理这次的退货，然后会把您的情况反馈给品控部门。",
+          "完全理解您的顾虑。这次除了全额退款外，我再帮您申请一张50元无门槛优惠券，下次购物可以使用。另外我会记录您的问题，品控那边会跟进处理。",
+          "好的，退款申请已发起。退货运费我们承担，退货地址马上短信发您。"
+        ],
+        "reasoning": "用户意图为投诉，客服处理结果为已解决。判断基于对话中1条用户关键语句和3条客服回复。"
+      },
+      "confidence": 0.75,
+      "needs_manual_review": true,
+      "manual_review_reason": "用户有流失倾向，需评估挽留策略；重复质量问题，需品控部门跟进；存在响应延迟，需评估排班或响应流程"
+    },
+    {
+      "conversation_id": "conv_21",
+      "channel": "在线",
+      "agent": "小王",
+      "turn_count": 6,
+      "primary_intent": "商品咨询",
+      "issue_category": "产品信息",
+      "issue_summary": "这个面膜的成分表能发给我看看吗 我皮肤比较敏感 烟酰胺浓度高吗 我对这个成分有点过敏 好吧 推荐给我看看",
+      "products_mentioned": [
+        "面膜"
+      ],
+      "is_multi_issue": false,
+      "sub_issues": [],
+      "resolution_status": "已解决",
+      "resolution_action": "查询相关信息",
+      "customer_next_action": null,
+      "agent_next_action": null,
+      "user_sentiment_initial": "neutral",
+      "user_sentiment_final": "negative",
+      "urgency_level": "low",
+      "risk_flags": [],
+      "complaint_related": false,
+      "human_transfer": false,
+      "compensation_offered": false,
+      "order_ids": [],
+      "pii_detected": false,
+      "pii_types": [],
+      "evidence": {
+        "user_quotes": [
+          "这个面膜的成分表能发给我看看吗 我皮肤比较敏感",
+          "烟酰胺浓度高吗 我对这个成分有点过敏",
+          "好吧 推荐给我看看"
+        ],
+        "agent_quotes": [
+          "好的，我帮您查一下这款面膜的成分。请稍等。"
+        ],
+        "reasoning": "用户意图为商品咨询，客服处理结果为已解决。判断基于对话中3条用户关键语句和1条客服回复。"
+      },
+      "confidence": 0.85,
+      "needs_manual_review": false,
+      "manual_review_reason": null
+    },
+    {
+      "conversation_id": "conv_22",
+      "channel": "在线",
+      "agent": "小张",
+      "turn_count": 5,
+      "primary_intent": "物流查询",
+      "issue_category": "物流配送",
+      "issue_summary": "快递到了但是放错快递柜了 我取不出来啊 收到取件码了 但是那个快递柜离我好几公里 我根本没法去取 可以 最好送到家",
+      "products_mentioned": [],
+      "is_multi_issue": false,
+      "sub_issues": [],
+      "resolution_status": "待跟进",
+      "resolution_action": "已联系快递公司核实",
+      "customer_next_action": "等待处理结果",
+      "agent_next_action": null,
+      "user_sentiment_initial": "neutral",
+      "user_sentiment_final": "neutral",
+      "urgency_level": "low",
+      "risk_flags": [],
+      "complaint_related": false,
+      "human_transfer": false,
+      "compensation_offered": false,
+      "order_ids": [],
+      "pii_detected": false,
+      "pii_types": [],
+      "evidence": {
+        "user_quotes": [
+          "快递到了但是放错快递柜了 我取不出来啊",
+          "收到取件码了 但是那个快递柜离我好几公里 我根本没法去取"
+        ],
+        "agent_quotes": [
+          "了解，这种情况我帮您联系快递公司重新派送到您附近的快递柜或者送货上门，预计需要1-2天。您看可以吗？"
+        ],
+        "reasoning": "用户意图为物流查询，客服处理结果为待跟进。判断基于对话中2条用户关键语句和1条客服回复。"
+      },
+      "confidence": 0.85,
+      "needs_manual_review": false,
+      "manual_review_reason": null
+    },
+    {
+      "conversation_id": "conv_23",
+      "channel": "电话",
+      "agent": "小李",
+      "turn_count": 4,
+      "primary_intent": "建议反馈",
+      "issue_category": "色差/描述不符",
+      "issue_summary": "我给你们提个建议 你们能不能加个功能就是下单之前能先看看实物视频 光看图片有时候不太准 嗯 上次买了个颜色和图片差挺多的 有点失望",
+      "products_mentioned": [],
+      "is_multi_issue": false,
+      "sub_issues": [],
+      "resolution_status": "已解决",
+      "resolution_action": "已记录反馈",
+      "customer_next_action": null,
+      "agent_next_action": null,
+      "user_sentiment_initial": "neutral",
+      "user_sentiment_final": "negative",
+      "urgency_level": "low",
+      "risk_flags": [],
+      "complaint_related": false,
+      "human_transfer": false,
+      "compensation_offered": false,
+      "order_ids": [],
+      "pii_detected": false,
+      "pii_types": [],
+      "evidence": {
+        "user_quotes": [
+          "我给你们提个建议 你们能不能加个功能就是下单之前能先看看实物视频 光看图片有时候不太准"
+        ],
+        "agent_quotes": [],
+        "reasoning": "用户意图为建议反馈，客服处理结果为已解决。判断基于对话中1条用户关键语句和0条客服回复。"
+      },
+      "confidence": 0.85,
+      "needs_manual_review": false,
+      "manual_review_reason": null
+    },
+    {
+      "conversation_id": "conv_24",
+      "channel": "在线",
+      "agent": "小王",
+      "turn_count": 4,
+      "primary_intent": "商品咨询",
+      "issue_category": "服务响应",
+      "issue_summary": "我刚才问的问题你们怎么不回了 我问那个蓝牙耳机有没有黑色的",
+      "products_mentioned": [
+        "蓝牙耳机"
+      ],
+      "is_multi_issue": false,
+      "sub_issues": [],
+      "resolution_status": "已解决",
+      "resolution_action": "抱歉让您久等了，请问您之前问的是什么问题？我马上帮您处理。 查了一下，这款蓝牙耳机目前有黑色和白色两个颜色可选，库存都充足。您要下单黑色的吗？",
+      "customer_next_action": null,
+      "agent_next_action": null,
+      "user_sentiment_initial": "neutral",
+      "user_sentiment_final": "neutral",
+      "urgency_level": "low",
+      "risk_flags": [],
+      "complaint_related": false,
+      "human_transfer": false,
+      "compensation_offered": false,
+      "order_ids": [],
+      "pii_detected": false,
+      "pii_types": [],
+      "evidence": {
+        "user_quotes": [
+          "我问那个蓝牙耳机有没有黑色的"
+        ],
+        "agent_quotes": [
+          "抱歉让您久等了，请问您之前问的是什么问题？我马上帮您处理。"
+        ],
+        "reasoning": "用户意图为商品咨询，客服处理结果为已解决。判断基于对话中1条用户关键语句和1条客服回复。"
+      },
+      "confidence": 0.85,
+      "needs_manual_review": true,
+      "manual_review_reason": "存在响应延迟，需评估排班或响应流程"
+    },
+    {
+      "conversation_id": "conv_25",
+      "channel": "在线",
+      "agent": "小张",
+      "turn_count": 4,
+      "primary_intent": "催促/跟进",
+      "issue_category": "服务响应",
+      "issue_summary": "你们能不能搞快点 我等了半天了 就一个简单问题 算了 不用了 我在别的地方买到了",
+      "products_mentioned": [],
+      "is_multi_issue": false,
+      "sub_issues": [],
+      "resolution_status": "未解决",
+      "resolution_action": "用户中途放弃沟通或转向其他渠道",
+      "customer_next_action": null,
+      "agent_next_action": null,
+      "user_sentiment_initial": "negative",
+      "user_sentiment_final": "negative",
+      "urgency_level": "high",
+      "risk_flags": [
+        "用户流失风险"
+      ],
+      "complaint_related": false,
+      "human_transfer": false,
+      "compensation_offered": false,
+      "order_ids": [],
+      "pii_detected": false,
+      "pii_types": [],
+      "evidence": {
+        "user_quotes": [
+          "你们能不能搞快点 我等了半天了 就一个简单问题"
+        ],
+        "agent_quotes": [
+          "抱歉让您久等了！请问您的问题是什么？",
+          "很抱歉没能及时为您服务。如果后续有任何需要，随时联系我们。"
+        ],
+        "reasoning": "用户意图为催促/跟进，客服处理结果为未解决。判断基于对话中1条用户关键语句和2条客服回复。"
+      },
+      "confidence": 0.7999999999999999,
+      "needs_manual_review": true,
+      "manual_review_reason": "用户中途放弃，需评估是否需主动回访；用户有流失倾向，需评估挽留策略；存在响应延迟，需评估排班或响应流程"
+    }
+  ],
+  "failed_ids": [],
+  "summary": "共处理25条对话。已解决15条（60%），涉及投诉4条，需人工复核15条。"
+}
